@@ -18,7 +18,7 @@ const Faq = () => {
           >
             <Typography component="span">Is QTify free to use?</Typography>
           </AccordionSummary>
-          <AccordionDetails className={style.answer}>
+          <AccordionDetails>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
             malesuada lacus ex, sit amet blandit leo lobortis eget.
           </AccordionDetails>
