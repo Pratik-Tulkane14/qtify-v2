@@ -3,7 +3,8 @@ import brandLogo from "/BrandLogo.svg";
 import searchIcon from "/SearchIcon.svg"
 import style from "./navbar.module.css"
 import ButtonUI from "./ButtonUI";
-const Navbar = () => {
+import PropTypes from "prop-types";
+const Navbar = ({handleClickOpen}) => {
   const [input, setInput] = useState("");
   return (
     <div className={style.navbarWrapper}>
@@ -23,10 +24,12 @@ const Navbar = () => {
           </span>
       </div>
       <div className={style.feedbackSection}>
-        <ButtonUI className={style.feedbackBtn} buttonName={"give feedback"}/>
+        <ButtonUI className={style.feedbackBtn}  buttonName={"give feedback"} handleClickOpen={handleClickOpen}/>
       </div>
     </div>
   );
 };
-
+Navbar.propTypes = {
+    handleClickOpen: PropTypes.func.isRequired,
+};
 export default Navbar;
