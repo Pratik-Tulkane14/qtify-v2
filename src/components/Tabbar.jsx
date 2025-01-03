@@ -4,7 +4,7 @@ import Box from "@mui/material/Box";
 import { useEffect, useState } from "react";
 import style from "./tabbar.module.css";
 import CustomTabPanel from "./CustomTabPanel";
-import getGenres from "../services/getgenres";
+import getGenres from "../services/getGenres";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
