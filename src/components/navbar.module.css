@@ -8,7 +8,7 @@
   padding: 1rem;
   background-color: var(--primary-color);
 }
-.logoSection{
+.logoSection {
   cursor: pointer;
 }
 .searchWrapper {
@@ -32,11 +32,11 @@
   padding: 0.7rem 1rem;
 }
 .feedbackBtn {
+  font-family: "Poppins" sans-serif;
   cursor: pointer;
   background-color: var(--secondary-color);
   color: var(--primary-color);
   padding: 1rem;
   border-radius: 10px;
-  text-transform: capitalize;
   font-weight: bold;
 }
