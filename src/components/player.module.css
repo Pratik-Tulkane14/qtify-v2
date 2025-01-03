@@ -2,14 +2,18 @@
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 0 1rem;
+  margin: 1rem 0;
+  padding: 1rem;
+  box-shadow: 0px 0px 5px 0px rgba(231, 231, 231, 0.75);
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(231, 231, 231, 0.75);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(231, 231, 231, 0.75);
 }
 .playSection {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1re0;
 }
 .plyBtn {
   height: 3rem;

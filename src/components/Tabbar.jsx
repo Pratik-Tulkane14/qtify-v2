@@ -88,7 +88,7 @@ const Tabbar = () => {
               <Card
                 title={item.title}
                 image={item.image}
-                follows={item.follows}
+                likes={`${item.likes} Likes`}
               />
             </SwiperSlide>
           ))}
@@ -122,7 +122,7 @@ const Tabbar = () => {
               <Card
                 title={item.title}
                 image={item.image}
-                follows={item.follows}
+                likes={`${item.likes} Likes`}
               />
             </SwiperSlide>
           ))}
@@ -156,7 +156,7 @@ const Tabbar = () => {
               <Card
                 title={item.title}
                 image={item.image}
-                follows={item.follows}
+                likes={`${item.likes} Likes`}
               />
             </SwiperSlide>
           ))}
@@ -190,7 +190,7 @@ const Tabbar = () => {
               <Card
                 title={item.title}
                 image={item.image}
-                follows={item.follows}
+                likes={`${item.likes} Likes`}
               />
             </SwiperSlide>
           ))}
@@ -224,7 +224,7 @@ const Tabbar = () => {
               <Card
                 title={item.title}
                 image={item.image}
-                follows={item.follows}
+                likes={`${item.likes} Likes`}
               />
             </SwiperSlide>
           ))}

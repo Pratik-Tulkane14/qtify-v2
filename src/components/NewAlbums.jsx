@@ -65,7 +65,7 @@ const NewAlbums = () => {
               <Card
                 title={item.title}
                 image={item.image}
-                follows={item.follows}
+                likes={`${item.follows} Follows`}
               />
             </SwiperSlide>
           ))}
@@ -78,7 +78,7 @@ const NewAlbums = () => {
                 key={item.id}
                 title={item.title}
                 image={item.image}
-                follows={item.follows}
+                likes={`${item.follows} Follows`}
               />
             );
           })}

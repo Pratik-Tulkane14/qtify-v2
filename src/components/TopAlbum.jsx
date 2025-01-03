@@ -2,20 +2,12 @@ import { useEffect, useState } from "react";
 import style from "./topAlbum.module.css";
 import getTopAlbum from "../services/getTopAlbum";
 import Card from "./Card";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
-
-// import './styles.css';
-
-// import required modules
 import { Navigation } from "swiper/modules";
 const TopAlbum = () => {
   const [albumList, setAlbumList] = useState([]);
-  
   const [isCollapse, setIsCollapse] = useState(false);
   const fetchAlbum = async () => {
     const result = await getTopAlbum();
@@ -42,7 +34,7 @@ const TopAlbum = () => {
           navigation={true}
           modules={[Navigation]}
           className="mySwiper"
-          spaceBetween={60} // 2rem gap
+          spaceBetween={60}
           slidesPerView={8}
           breakpoints={{
             640: {
@@ -65,7 +57,7 @@ const TopAlbum = () => {
               <Card
                 title={item.title}
                 image={item.image}
-                follows={item.follows}
+                likes={`${item.follows} Follows`}
               />
             </SwiperSlide>
           ))}
@@ -78,7 +70,7 @@ const TopAlbum = () => {
                 key={item.id}
                 title={item.title}
                 image={item.image}
-                follows={item.follows}
+                likes={`${item.follows} Follows`}
               />
             );
           })}

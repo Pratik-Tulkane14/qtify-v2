@@ -1,5 +1,6 @@
 .albumWrapper {
   padding: 1rem;
+  border-bottom: 2px solid var(--primary-color);
 }
 .cardWrapper {
   display: flex;
