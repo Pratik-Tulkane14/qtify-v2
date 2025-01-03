@@ -3,8 +3,8 @@ import KeyboardBackspaceIcon from "@mui/icons-material/KeyboardBackspace";
 import library from "/library.svg";
 import shuffle from "/shuffle.png";
 import album from "/album.png";
-import IconButton from "./IconButton";
-import SongsTable from "./SongsTable";
+import IconButton from "../components/IconButton";
+import SongsTable from "../components/SongsTable";
 import { useNavigate } from "react-router-dom";
 const PlayList = () => {
   const navigate = useNavigate();

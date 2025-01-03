@@ -1,7 +1,6 @@
-import Feedback from "./Feedback";
-import Navbar from "./Navbar";
-
-import Player from "./Player";
+import Feedback from "../components/Feedback";
+import Navbar from "../components/Navbar";
+import Player from "../components/Player";
 import { useState } from "react";
 import { Outlet } from "react-router-dom";
 

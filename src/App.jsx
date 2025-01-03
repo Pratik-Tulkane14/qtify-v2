@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router";
-import Layout from "./components/Layout";
-import Router from "./components/Router";
-import PlayList from "./components/PlayList";
+import Layout from "./router/Layout";
+import Router from "./router/Router";
+import PlayList from "./pages/PlayList";
 function App() {
   const router = createBrowserRouter([
     {
