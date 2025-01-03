@@ -7,6 +7,7 @@ import Faq from './components/Faq'
 import Player from './components/Player'
 import Feedback from './components/Feedback'
 import { useState } from 'react'
+import PlayList from './components/PlayList'
 
 function App() {
   const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
@@ -26,6 +27,7 @@ function App() {
       <Songs/>
       <Faq/>
       <Player/>
+      <PlayList/>
       <Feedback isFeedbackModalOpen={isFeedbackModalOpen} handleClose={handleClose}/>
     </>
   )

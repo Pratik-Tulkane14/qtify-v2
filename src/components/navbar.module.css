@@ -1,6 +1,7 @@
 .navbarWrapper {
   position: sticky;
   top: 0;
+  z-index: 22;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,17 +16,17 @@
   background-color: var(--ternary-color);
   border-radius: 10px;
 }
-.searchBox{
-    height: 3rem;
-    width: 20rem;
-    border-color: transparent;
-    padding: 1rem;
-    border-right: 2px solid var(--secondary-color);
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+.searchBox {
+  height: 3rem;
+  width: 20rem;
+  border-color: transparent;
+  padding: 1rem;
+  border-right: 2px solid var(--secondary-color);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-.searchImg{
-    padding: 0.7rem 1rem;
+.searchImg {
+  padding: 0.7rem 1rem;
 }
 .feedbackBtn {
   cursor: pointer;

@@ -1,7 +1,11 @@
 import playbtn from "/playbtn.png";
+import playMusic from "/playMusic.png";
 import songImg from "/songImg.png";
 import style from "./player.module.css";
+import { useState } from "react";
 const Player = () => {
+  const [isMusicPlay, setIsMusicPlay] = useState(false);
+
   return (
     <div className={style.playerWrapper}>
       <div className={style.songImgSection}>
@@ -13,8 +17,12 @@ const Player = () => {
       </div>
       <div className={style.playSection}>
         <div className={style.playBtnWrapper}>
-
-        <img className={style.plyBtn} src={playbtn} alt="playbtn" />
+          <img
+            onClick={()=>setIsMusicPlay((prev) => !prev)}
+            className={style.plyBtn}
+            src={isMusicPlay?playMusic:playbtn}
+            alt="playbtn"
+          />
         </div>
         <div className={style.songTime}>
           <span className={style.startTime}>0.38</span>

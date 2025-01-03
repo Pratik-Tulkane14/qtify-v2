@@ -4,27 +4,33 @@ import searchIcon from "/SearchIcon.svg"
 import style from "./navbar.module.css"
 import ButtonUI from "./ButtonUI";
 import PropTypes from "prop-types";
+// import AutoCompleteUI from "./AutoCompleteUI";
 const Navbar = ({handleClickOpen}) => {
   const [input, setInput] = useState("");
   return (
     <div className={style.navbarWrapper}>
       <div className={style.logoSection}>
-          <img src={brandLogo} alt="brandLogo" />
+        <img src={brandLogo} alt="brandLogo" />
       </div>
       <div className={style.searchSection}>
         <span className={style.searchWrapper}>
-        <input
-        className={style.searchBox}
-        placeholder="Search a album of your choice"
-          type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
+          <input
+            className={style.searchBox}
+            placeholder="Search a album of your choice"
+            type="text"
+            value={input}
+            onChange={(e) => setInput(e.target.value)}
           />
-        <img className={style.searchImg} src={searchIcon} alt="searchIcon" />
-          </span>
+          <img className={style.searchImg} src={searchIcon} alt="searchIcon" />
+        </span>
       </div>
+      {/* <AutoCompleteUI/> */}
       <div className={style.feedbackSection}>
-        <ButtonUI className={style.feedbackBtn}  buttonName={"give feedback"} handleClickOpen={handleClickOpen}/>
+        <ButtonUI
+          className={style.feedbackBtn}
+          buttonName={"give feedback"}
+          handleClickOpen={handleClickOpen}
+        />
       </div>
     </div>
   );

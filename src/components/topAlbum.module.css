@@ -1,22 +1,33 @@
-.albumWrapper{
-    padding: 1rem;
+.albumWrapper {
+  padding: 1rem;
 }
-.cardWrapper{
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap;
-    padding: 1rem;
+.cardWrapper {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1rem;
 }
-.heading{
-color: #fff;
-margin:0 1rem;
+.cardWrapperSwiper {
+  overflow-x: hidden;
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
 }
-.subHeadingWrapper{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.heading {
+  color: #fff;
+  margin: 0 1rem;
 }
-.showAll{
-    color:#34c94b ;
-    cursor: pointer;
+.subHeadingWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.showAll {
+  color: #34c94b;
+  cursor: pointer;
+}
+
+/* .swiperSlider {
+  width: 92rem !important;
+  background-color: var(--secondary-color) !important; 
+} */
