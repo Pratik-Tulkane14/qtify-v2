@@ -4,12 +4,14 @@ import searchIcon from "/SearchIcon.svg"
 import style from "./navbar.module.css"
 import ButtonUI from "./ButtonUI";
 import PropTypes from "prop-types";
+import { useNavigate } from "react-router-dom";
 // import AutoCompleteUI from "./AutoCompleteUI";
 const Navbar = ({handleClickOpen}) => {
+  const navigate = useNavigate();
   const [input, setInput] = useState("");
   return (
     <div className={style.navbarWrapper}>
-      <div className={style.logoSection}>
+      <div className={style.logoSection} onClick={() => navigate("/")}>
         <img src={brandLogo} alt="brandLogo" />
       </div>
       <div className={style.searchSection}>

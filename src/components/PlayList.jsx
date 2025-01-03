@@ -4,12 +4,15 @@ import library from "/library.svg";
 import shuffle from "/shuffle.png";
 import album from "/album.png";
 import IconButton from "./IconButton";
+import SongsTable from "./SongsTable";
+import { useNavigate } from "react-router-dom";
 const PlayList = () => {
+  const navigate = useNavigate();
   const handleShuffle = () => {};
   const handleAddToLibrary = () => {};
   return (
     <div>
-      <div className={style.iconSection}>
+      <div className={style.iconSection} onClick={()=>navigate("/")}>
         <KeyboardBackspaceIcon className={style.backIcon}/>
       </div>
       <div className={style.main}>
@@ -44,6 +47,7 @@ const PlayList = () => {
         </div>
         </div>
       </div>
+      <SongsTable/>
     </div>
   );
 };

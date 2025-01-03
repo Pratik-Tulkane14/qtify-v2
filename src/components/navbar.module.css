@@ -8,6 +8,9 @@
   padding: 1rem;
   background-color: var(--primary-color);
 }
+.logoSection{
+  cursor: pointer;
+}
 .searchWrapper {
   display: flex;
   justify-content: center;

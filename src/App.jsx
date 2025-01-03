@@ -1,36 +1,20 @@
-import Hero from './components/Hero'
-import Navbar from './components/Navbar'
-import NewAlbums from './components/NewAlbums'
-import Songs from './components/Songs'
-import TopAlbum from './components/TopAlbum'
-import Faq from './components/Faq'
-import Player from './components/Player'
-import Feedback from './components/Feedback'
-import { useState } from 'react'
-import PlayList from './components/PlayList'
-
+import { RouterProvider, createBrowserRouter } from "react-router";
+import Layout from "./components/Layout";
+import Router from "./components/Router";
+import PlayList from "./components/PlayList";
 function App() {
-  const [isFeedbackModalOpen, setIsFeedbackModalOpen] = useState(false);
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        { path: "/", element: <Router /> },
+        { path: "/songs", element: <PlayList /> },
 
-  const handleClickOpen = () => {
-    setIsFeedbackModalOpen(true);
-  };
-  const handleClose = () => {
-    setIsFeedbackModalOpen(false);
-  };
-  return (
-    <>
-      <Navbar handleClickOpen={handleClickOpen}/>
-      <Hero/>
-      <TopAlbum/>
-      <NewAlbums/>
-      <Songs/>
-      <Faq/>
-      <Player/>
-      <PlayList/>
-      <Feedback isFeedbackModalOpen={isFeedbackModalOpen} handleClose={handleClose}/>
-    </>
-  )
+      ],
+    },
+  ]);
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;
