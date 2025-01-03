@@ -48,6 +48,11 @@ const Tabbar = () => {
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
+          sx={{
+            "& .MuiTabs-indicator": {
+              backgroundColor: " #34c94b",
+            },
+          }}
         >
           <Tab label="All" {...a11yProps(0)} className={style.tabName} />
           {genersList?.map((item, index) => (
